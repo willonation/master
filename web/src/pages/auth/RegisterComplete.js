@@ -25,8 +25,8 @@ const RegisterComplete = ({ history }) => {
       return;
     }
 
-    if (password.length < 6) {
-      toast.error("Password must be at least 6 characters long");
+    if (password.length < 8) {
+      toast.error("Password must be at least 8 characters long");
       return;
     }
 
@@ -73,7 +73,6 @@ const RegisterComplete = ({ history }) => {
   const completeRegistrationForm = () => (
     <form onSubmit={handleSubmit}>
       <input type="email" className="form-control" value={email} disabled />
-
       <input
         type="password"
         className="form-control"

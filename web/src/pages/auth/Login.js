@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 import { createOrUpdateUser } from "../../functions/auth";
 
 const Login = ({ history }) => {
-  const [email, setEmail] = useState("gqlreactnode@gmail.com");
-  const [password, setPassword] = useState("gggggg");
+  const [email, setEmail] = useState("willonation@gmail.com");
+  const [password, setPassword] = useState("111222333");
   const [loading, setLoading] = useState(false);
 
   const { user } = useSelector((state) => ({ ...state }));
@@ -54,11 +54,11 @@ const Login = ({ history }) => {
           dispatch({
             type: "LOGGED_IN_USER",
             payload: {
-              name: res.data.name,
-              email: res.data.email,
+              // name: res.data.name,
+              email: user.email,
               token: idTokenResult.token,
-              role: res.data.role,
-              _id: res.data._id,
+              // role: res.data.role,
+              // _id: res.data._id,
             },
           });
           roleBasedRedirect(res);
@@ -84,11 +84,11 @@ const Login = ({ history }) => {
             dispatch({
               type: "LOGGED_IN_USER",
               payload: {
-                name: res.data.name,
-                email: res.data.email,
+                // name: res.data.name,
+                email: user.email,
                 token: idTokenResult.token,
-                role: res.data.role,
-                _id: res.data._id,
+                // role: res.data.role,
+                // _id: res.data._id,
               },
             });
             roleBasedRedirect(res);
@@ -134,7 +134,7 @@ const Login = ({ history }) => {
         shape="round"
         icon={<MailOutlined />}
         size="large"
-        disabled={!email || password.length < 6}
+        disabled={!email || password.length < 8}
       >
         Login with Email/Password
       </Button>

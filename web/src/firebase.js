@@ -2,13 +2,13 @@ import * as firebase from "firebase";
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyCFfb2kZQxByaSMSECLg59hWyoXkw8ikjI",
-    authDomain: "willonation-2dc57.firebaseapp.com",
-    databaseURL: "https://ecommerce-225c8.firebaseio.com",
-    projectId: "willonation-2dc57",
-    storageBucket: "willonation-2dc57.appspot.com",
-    messagingSenderId: "1091361119992",
-    appId: "1:1091361119992:web:e88c456edf0cd41e25650d"
+    apiKey: "AIzaSyAbxAd_Bnf0nQfxOFDe1XLTGYdSeYV8IB4",
+    authDomain: "willonation-16f3a.firebaseapp.com",
+    databaseURL: "https://willonation-16f3a-default-rtdb.firebaseio.com",  
+    projectId: "willonation-16f3a",
+    storageBucket: "willonation-16f3a.appspot.com",
+    messagingSenderId: "933612109150",
+    appId: "1:933612109150:web:70cb758b90d818e2a423cf"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
