@@ -54,11 +54,11 @@ const Login = ({ history }) => {
           dispatch({
             type: "LOGGED_IN_USER",
             payload: {
-              // name: res.data.name,
+              name: res.data.name,
               email: user.email,
               token: idTokenResult.token,
-              // role: res.data.role,
-              // _id: res.data._id,
+              role: res.data.role,
+              _id: res.data._id,
             },
           });
           roleBasedRedirect(res);
